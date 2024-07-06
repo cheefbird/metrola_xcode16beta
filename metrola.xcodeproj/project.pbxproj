@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069517DE2C38A8B900478C8C /* MetrolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517DD2C38A8B900478C8C /* MetrolaApp.swift */; };
+		069517E02C38A8B900478C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517DF2C38A8B900478C8C /* ContentView.swift */; };
+		069517E22C38A8BA00478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E12C38A8BA00478C8C /* Assets.xcassets */; };
+		069517E52C38A8BA00478C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E42C38A8BA00478C8C /* Preview Assets.xcassets */; };
+		069517EF2C38A8BA00478C8C /* metrolaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517EE2C38A8BA00478C8C /* metrolaTests.swift */; };
+		069517F92C38A8BA00478C8C /* metrolaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517F82C38A8BA00478C8C /* metrolaUITests.swift */; };
+		069517FB2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517FA2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		069517EB2C38A8BA00478C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 069517D22C38A8B900478C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 069517D92C38A8B900478C8C;
+			remoteInfo = metrola;
+		};
+		069517F52C38A8BA00478C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 069517D22C38A8B900478C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 069517D92C38A8B900478C8C;
+			remoteInfo = metrola;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069517DA2C38A8B900478C8C /* metrola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metrola.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		069517DD2C38A8B900478C8C /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
+		069517DF2C38A8B900478C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		069517E12C38A8BA00478C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		069517E42C38A8BA00478C8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		069517EA2C38A8BA00478C8C /* metrolaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metrolaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		069517EE2C38A8BA00478C8C /* metrolaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metrolaTests.swift; sourceTree = "<group>"; };
+		069517F42C38A8BA00478C8C /* metrolaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metrolaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		069517F82C38A8BA00478C8C /* metrolaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metrolaUITests.swift; sourceTree = "<group>"; };
+		069517FA2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metrolaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		069517D72C38A8B900478C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517E72C38A8BA00478C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517F12C38A8BA00478C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		069517D12C38A8B900478C8C = {
+			isa = PBXGroup;
+			children = (
+				069517DC2C38A8B900478C8C /* metrola */,
+				069517ED2C38A8BA00478C8C /* metrolaTests */,
+				069517F72C38A8BA00478C8C /* metrolaUITests */,
+				069517DB2C38A8B900478C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		069517DB2C38A8B900478C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				069517DA2C38A8B900478C8C /* metrola.app */,
+				069517EA2C38A8BA00478C8C /* metrolaTests.xctest */,
+				069517F42C38A8BA00478C8C /* metrolaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		069517DC2C38A8B900478C8C /* metrola */ = {
+			isa = PBXGroup;
+			children = (
+				069517DD2C38A8B900478C8C /* MetrolaApp.swift */,
+				069517DF2C38A8B900478C8C /* ContentView.swift */,
+				069517E12C38A8BA00478C8C /* Assets.xcassets */,
+				069517E32C38A8BA00478C8C /* Preview Content */,
+			);
+			path = metrola;
+			sourceTree = "<group>";
+		};
+		069517E32C38A8BA00478C8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				069517E42C38A8BA00478C8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		069517ED2C38A8BA00478C8C /* metrolaTests */ = {
+			isa = PBXGroup;
+			children = (
+				069517EE2C38A8BA00478C8C /* metrolaTests.swift */,
+			);
+			path = metrolaTests;
+			sourceTree = "<group>";
+		};
+		069517F72C38A8BA00478C8C /* metrolaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				069517F82C38A8BA00478C8C /* metrolaUITests.swift */,
+				069517FA2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift */,
+			);
+			path = metrolaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		069517D92C38A8B900478C8C /* metrola */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069517FE2C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrola" */;
+			buildPhases = (
+				069517D62C38A8B900478C8C /* Sources */,
+				069517D72C38A8B900478C8C /* Frameworks */,
+				069517D82C38A8B900478C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = metrola;
+			productName = metrola;
+			productReference = 069517DA2C38A8B900478C8C /* metrola.app */;
+			productType = "com.apple.product-type.application";
+		};
+		069517E92C38A8BA00478C8C /* metrolaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069518012C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrolaTests" */;
+			buildPhases = (
+				069517E62C38A8BA00478C8C /* Sources */,
+				069517E72C38A8BA00478C8C /* Frameworks */,
+				069517E82C38A8BA00478C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				069517EC2C38A8BA00478C8C /* PBXTargetDependency */,
+			);
+			name = metrolaTests;
+			productName = metrolaTests;
+			productReference = 069517EA2C38A8BA00478C8C /* metrolaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		069517F32C38A8BA00478C8C /* metrolaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069518042C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrolaUITests" */;
+			buildPhases = (
+				069517F02C38A8BA00478C8C /* Sources */,
+				069517F12C38A8BA00478C8C /* Frameworks */,
+				069517F22C38A8BA00478C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				069517F62C38A8BA00478C8C /* PBXTargetDependency */,
+			);
+			name = metrolaUITests;
+			productName = metrolaUITests;
+			productReference = 069517F42C38A8BA00478C8C /* metrolaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		069517D22C38A8B900478C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					069517D92C38A8B900478C8C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					069517E92C38A8BA00478C8C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 069517D92C38A8B900478C8C;
+					};
+					069517F32C38A8BA00478C8C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 069517D92C38A8B900478C8C;
+					};
+				};
+			};
+			buildConfigurationList = 069517D52C38A8B900478C8C /* Build configuration list for PBXProject "metrola" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 069517D12C38A8B900478C8C;
+			productRefGroup = 069517DB2C38A8B900478C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				069517D92C38A8B900478C8C /* metrola */,
+				069517E92C38A8BA00478C8C /* metrolaTests */,
+				069517F32C38A8BA00478C8C /* metrolaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		069517D82C38A8B900478C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069517E52C38A8BA00478C8C /* Preview Assets.xcassets in Resources */,
+				069517E22C38A8BA00478C8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517E82C38A8BA00478C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517F22C38A8BA00478C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		069517D62C38A8B900478C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069517E02C38A8B900478C8C /* ContentView.swift in Sources */,
+				069517DE2C38A8B900478C8C /* MetrolaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517E62C38A8BA00478C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069517EF2C38A8BA00478C8C /* metrolaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069517F02C38A8BA00478C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069517F92C38A8BA00478C8C /* metrolaUITests.swift in Sources */,
+				069517FB2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		069517EC2C38A8BA00478C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 069517D92C38A8B900478C8C /* metrola */;
+			targetProxy = 069517EB2C38A8BA00478C8C /* PBXContainerItemProxy */;
+		};
+		069517F62C38A8BA00478C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 069517D92C38A8B900478C8C /* metrola */;
+			targetProxy = 069517F52C38A8BA00478C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		069517FC2C38A8BA00478C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		069517FD2C38A8BA00478C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		069517FF2C38A8BA00478C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"metrola/Preview Content\"";
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = metrola;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrola;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		069518002C38A8BA00478C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"metrola/Preview Content\"";
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = metrola;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrola;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		069518022C38A8BA00478C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrolaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metrola.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/metrola";
+			};
+			name = Debug;
+		};
+		069518032C38A8BA00478C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrolaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metrola.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/metrola";
+			};
+			name = Release;
+		};
+		069518052C38A8BA00478C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrolaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = metrola;
+			};
+			name = Debug;
+		};
+		069518062C38A8BA00478C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA3KPNE52J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.metrolaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = metrola;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		069517D52C38A8B900478C8C /* Build configuration list for PBXProject "metrola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069517FC2C38A8BA00478C8C /* Debug */,
+				069517FD2C38A8BA00478C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069517FE2C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069517FF2C38A8BA00478C8C /* Debug */,
+				069518002C38A8BA00478C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069518012C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrolaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069518022C38A8BA00478C8C /* Debug */,
+				069518032C38A8BA00478C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069518042C38A8BA00478C8C /* Build configuration list for PBXNativeTarget "metrolaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069518052C38A8BA00478C8C /* Debug */,
+				069518062C38A8BA00478C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 069517D22C38A8B900478C8C /* Project object */;
+}
