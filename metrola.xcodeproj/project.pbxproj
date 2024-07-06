@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */; };
-		069517E02C38A8B900478C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517DF2C38A8B900478C8C /* ContentView.swift */; };
+		069517E02C38A8B900478C8C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517DF2C38A8B900478C8C /* RootView.swift */; };
 		069517E22C38A8BA00478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E12C38A8BA00478C8C /* Assets.xcassets */; };
 		069517E52C38A8BA00478C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E42C38A8BA00478C8C /* Preview Assets.xcassets */; };
 		069517EF2C38A8BA00478C8C /* metrolaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517EE2C38A8BA00478C8C /* metrolaTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
 		069517DA2C38A8B900478C8C /* metrola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metrola.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		069517DF2C38A8B900478C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		069517DF2C38A8B900478C8C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		069517E12C38A8BA00478C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		069517E42C38A8BA00478C8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		069517EA2C38A8BA00478C8C /* metrolaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metrolaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */,
-				069517DF2C38A8B900478C8C /* ContentView.swift */,
+				069517DF2C38A8B900478C8C /* RootView.swift */,
 				069517E12C38A8BA00478C8C /* Assets.xcassets */,
 				069517E32C38A8BA00478C8C /* Preview Content */,
 			);
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */,
-				069517E02C38A8B900478C8C /* ContentView.swift in Sources */,
+				069517E02C38A8B900478C8C /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
