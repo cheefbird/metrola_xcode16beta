@@ -9,13 +9,12 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RailLineGridView()
+                .tabItem {
+                    Label("Rail Lines", systemImage: "testtube.2")
+                }
         }
-        .padding()
     }
 }
 
