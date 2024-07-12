@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,20 @@
 		069517F82C38A8BA00478C8C /* metrolaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metrolaUITests.swift; sourceTree = "<group>"; };
 		069517FA2C38A8BA00478C8C /* metrolaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metrolaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		062744EA2C3CAE5100541CE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Line.swift,
+			);
+			target = 069517D92C38A8B900478C8C /* metrola */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		06A0B01F2C3CABC30001E3D0 /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (062744EA2C3CAE5100541CE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		069517D72C38A8B900478C8C /* Frameworks */ = {
@@ -96,6 +110,7 @@
 		069517DC2C38A8B900478C8C /* metrola */ = {
 			isa = PBXGroup;
 			children = (
+				06A0B01F2C3CABC30001E3D0 /* Model */,
 				062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */,
 				069517DF2C38A8B900478C8C /* RootView.swift */,
 				069517E12C38A8BA00478C8C /* Assets.xcassets */,
