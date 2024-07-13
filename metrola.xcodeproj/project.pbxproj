@@ -10,6 +10,7 @@
 		062BCD132C3923B9007207C6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 062BCD122C3923B9007207C6 /* Alamofire */; };
 		062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */; };
 		067DD7D62C41EE9D002B51DA /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DD7D52C41EE9D002B51DA /* StationMapView.swift */; };
+		067DD7DA2C41F71D002B51DA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DD7D92C41F709002B51DA /* LocationManager.swift */; };
 		069517E02C38A8B900478C8C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069517DF2C38A8B900478C8C /* RootView.swift */; };
 		069517E22C38A8BA00478C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E12C38A8BA00478C8C /* Assets.xcassets */; };
 		069517E52C38A8BA00478C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069517E42C38A8BA00478C8C /* Preview Assets.xcassets */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
 		067DD7D52C41EE9D002B51DA /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
+		067DD7D72C41F67A002B51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		067DD7D92C41F709002B51DA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		069517DA2C38A8B900478C8C /* metrola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metrola.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069517DF2C38A8B900478C8C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		069517E12C38A8BA00478C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		067DD7D82C41F6CC002B51DA /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				067DD7D92C41F709002B51DA /* LocationManager.swift */,
+				067DD7D52C41EE9D002B51DA /* StationMapView.swift */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
 		069517D12C38A8B900478C8C = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				06A0B01F2C3CABC30001E3D0 /* Model */,
+				067DD7D82C41F6CC002B51DA /* Map View */,
+				067DD7D72C41F67A002B51DA /* Info.plist */,
 				062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */,
 				069517DF2C38A8B900478C8C /* RootView.swift */,
 				069517E12C38A8BA00478C8C /* Assets.xcassets */,
-				067DD7D52C41EE9D002B51DA /* StationMapView.swift */,
 				069517E32C38A8BA00478C8C /* Preview Content */,
 			);
 			path = metrola;
@@ -284,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */,
+				067DD7DA2C41F71D002B51DA /* LocationManager.swift in Sources */,
 				067DD7D62C41EE9D002B51DA /* StationMapView.swift in Sources */,
 				069517E02C38A8B900478C8C /* RootView.swift in Sources */,
 			);
@@ -452,8 +466,10 @@
 				DEVELOPMENT_TEAM = WA3KPNE52J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = metrola/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = metrola;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to narrow results to stations and vehicles near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -486,8 +502,10 @@
 				DEVELOPMENT_TEAM = WA3KPNE52J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = metrola/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = metrola;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to narrow results to stations and vehicles near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
