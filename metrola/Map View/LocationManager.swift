@@ -5,46 +5,62 @@
 //  Created by Francis Breidenbach on 7/12/24.
 //
 
-import CoreLocation
 import Foundation
+import MapKit
 
 final class LocationManager: NSObject, ObservableObject {
-    @Published var lastKnownLocation: CLLocationCoordinate2D?
+    private let locationManager = CLLocationManager()
 
-    var manager = CLLocationManager()
+    @Published var region = MKCoordinateRegion(
+        center: .init(latitude: 34.04869, longitude: -118.25864),
+        span: .init(latitudeDelta: 0.1, longitudeDelta: 0.2)
+    )
 
+    override init() {
+        super.init()
 
-    func checkLocationAuthorization() {
-        manager.delegate = self
-        manager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        setup()
+    }
 
-        switch manager.authorizationStatus {
-        case .notDetermined:
-            manager.requestWhenInUseAuthorization()
-        case .restricted:
-            print("Location restricted")
-        case .denied:
-            print("Location restricted")
-        case .authorizedAlways:
-            print("Location authorizedAlways")
+    private func setup() {
+        switch locationManager.authorizationStatus {
         case .authorizedWhenInUse:
-            print("Location authorized when in use")
-            lastKnownLocation = manager.location?.coordinate
-        @unknown default:
-            print("Location services disabled")
+            locationManager.requestLocation()
+        case .notDetermined:
+            locationManager.startUpdatingLocation()
+            locationManager.requestWhenInUseAuthorization()
+        case .denied, .restricted:
+            print(
+                "Must be manually set again due to auth status: \(locationManager.authorizationStatus)"
+            )
+        default:
+            break
         }
     }
 }
 
 extension LocationManager: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_: CLLocationManager) {
-        checkLocationAuthorization()
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        guard manager.authorizationStatus == .authorizedWhenInUse
+        else { return }
+        locationManager.requestLocation()
     }
 
-    func locationManager(
-        _: CLLocationManager,
-        didUpdateLocations locations: [CLLocation]
-    ) {
-        lastKnownLocation = locations.first?.coordinate
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        locations.last.map {
+            region = MKCoordinateRegion(
+                center: $0.coordinate,
+                span: .init(
+                    latitudeDelta: 0.01,
+                    longitudeDelta: 0.01
+                )
+            )
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error) {
+        print(error)
     }
 }
