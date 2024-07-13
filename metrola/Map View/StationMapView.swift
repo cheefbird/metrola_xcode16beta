@@ -8,16 +8,23 @@
 import MapKit
 import SwiftUI
 
+extension MKCoordinateRegion {
+    static let losAngeles = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(
+            latitude: 34.04869,
+            longitude: -118.25864),
+        span: MKCoordinateSpan(
+            latitudeDelta: 0.1,
+            longitudeDelta: 0.1))
+}
+
 struct StationMapView: View {
-    @StateObject private var locationManager = LocationManager()
-    
-    let defaultRegion = MKCoordinateRegion(
-        center: .init(latitude: 34.04869, longitude: -118.25864),
-        span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)
-    )
-    
+    @StateObject var locationManager = LocationManager()
+
+    @State private var position: MapCameraPosition = .userLocation(fallback: .region(.losAngeles))
+
     var body: some View {
-        Map(initialPosition: .region(defaultRegion))
+        Map(position: $position) {}
     }
 }
 
