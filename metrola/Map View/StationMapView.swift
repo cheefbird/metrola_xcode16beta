@@ -21,10 +21,18 @@ extension MKCoordinateRegion {
 struct StationMapView: View {
     @StateObject var locationManager = LocationManager()
 
-    @State private var position: MapCameraPosition = .userLocation(fallback: .region(.losAngeles))
+    @State private var position: MapCameraPosition = .region(.losAngeles)
+    @State private var visibleRegion: MKCoordinateRegion?
+    @State private var selectedStation: MKMapItem?
 
     var body: some View {
-        Map(position: $position) {}
+        Map(position: $position, selection: $selectedStation) {}
+            .onMapCameraChange { context in
+                visibleRegion = context.region
+            }
+            .mapControls {
+                MapUserLocationButton()
+            }
     }
 }
 
