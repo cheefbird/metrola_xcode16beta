@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0615F4D22C432A6500B0FD09 /* testStops.json in Resources */ = {isa = PBXBuildFile; fileRef = 0615F4D12C432A6500B0FD09 /* testStops.json */; };
+		0615F4D42C432A8B00B0FD09 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615F4D32C432A8200B0FD09 /* Helpers.swift */; };
 		062BCD132C3923B9007207C6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 062BCD122C3923B9007207C6 /* Alamofire */; };
 		062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */; };
 		067DD7D62C41EE9D002B51DA /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DD7D52C41EE9D002B51DA /* StationMapView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0615F4D12C432A6500B0FD09 /* testStops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testStops.json; sourceTree = "<group>"; };
+		0615F4D32C432A8200B0FD09 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
 		067DD7D52C41EE9D002B51DA /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
 		067DD7D72C41F67A002B51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				067DD7D72C41F67A002B51DA /* Info.plist */,
 				062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */,
 				069517DF2C38A8B900478C8C /* RootView.swift */,
+				0615F4D32C432A8200B0FD09 /* Helpers.swift */,
 				069517E12C38A8BA00478C8C /* Assets.xcassets */,
 				069517E32C38A8BA00478C8C /* Preview Content */,
 			);
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */,
+				0615F4D42C432A8B00B0FD09 /* Helpers.swift in Sources */,
 				067DD7DA2C41F71D002B51DA /* LocationManager.swift in Sources */,
 				067DD7D62C41EE9D002B51DA /* StationMapView.swift in Sources */,
 				069517E02C38A8B900478C8C /* RootView.swift in Sources */,
