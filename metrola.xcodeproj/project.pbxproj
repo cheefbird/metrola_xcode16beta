@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0615F4D22C432A6500B0FD09 /* testStops.json in Resources */ = {isa = PBXBuildFile; fileRef = 0615F4D12C432A6500B0FD09 /* testStops.json */; };
 		062BCD132C3923B9007207C6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 062BCD122C3923B9007207C6 /* Alamofire */; };
 		062EE4DD2C391DA9001D6FAC /* MetrolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */; };
 		067DD7D62C41EE9D002B51DA /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067DD7D52C41EE9D002B51DA /* StationMapView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0615F4D12C432A6500B0FD09 /* testStops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testStops.json; sourceTree = "<group>"; };
 		062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
 		067DD7D52C41EE9D002B51DA /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
 		067DD7D72C41F67A002B51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Line.swift,
+				Stop.swift,
 			);
 			target = 069517D92C38A8B900478C8C /* metrola */;
 		};
@@ -124,6 +127,7 @@
 		069517DC2C38A8B900478C8C /* metrola */ = {
 			isa = PBXGroup;
 			children = (
+				0615F4D12C432A6500B0FD09 /* testStops.json */,
 				06A0B01F2C3CABC30001E3D0 /* Model */,
 				067DD7D82C41F6CC002B51DA /* Map View */,
 				067DD7D72C41F67A002B51DA /* Info.plist */,
@@ -271,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				069517E52C38A8BA00478C8C /* Preview Assets.xcassets in Resources */,
+				0615F4D22C432A6500B0FD09 /* testStops.json in Resources */,
 				069517E22C38A8BA00478C8C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
