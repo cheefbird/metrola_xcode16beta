@@ -21,18 +21,40 @@ extension MKCoordinateRegion {
 struct StationMapView: View {
     @StateObject var locationManager = LocationManager()
 
-    @State private var position: MapCameraPosition = .region(.losAngeles)
+    @State private var position: MapCameraPosition = .automatic
     @State private var visibleRegion: MKCoordinateRegion?
     @State private var selectedStation: MKMapItem?
 
+    let stops = Bundle.main.decode([Stop].self, from: "testStops.json")
+
     var body: some View {
-        Map(position: $position, selection: $selectedStation) {}
-            .onMapCameraChange { context in
-                visibleRegion = context.region
+        Map(position: $position, selection: $selectedStation) {
+            ForEach(stops) { stop in
+                Annotation(stop.name, coordinate: stopCoordinates(for: stop)) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Color("oldYellow"))
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(.secondary, lineWidth: 5)
+                        Image(systemName: "lightrail")
+                            .padding(5)
+                    }
+                }
             }
-            .mapControls {
-                MapUserLocationButton()
-            }
+        }
+        .mapStyle(.standard(elevation: .realistic))
+        .mapControls {
+            MapUserLocationButton()
+                
+        }
+        .tint(Color.seaGreen)
+        .onChange(of: stops) {
+            position = .automatic
+        }
+        .onMapCameraChange { context in
+            visibleRegion = context.region
+        }
+        
     }
 }
 
