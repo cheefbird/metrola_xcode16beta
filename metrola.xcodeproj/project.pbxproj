@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0615F4D12C432A6500B0FD09 /* testStops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testStops.json; sourceTree = "<group>"; };
 		0615F4D32C432A8200B0FD09 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0615F4D72C43559500B0FD09 /* gpxgenerator_path.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = gpxgenerator_path.gpx; path = ../../Downloads/gpxgenerator_path.gpx; sourceTree = "<group>"; };
 		062EE4DC2C391DA2001D6FAC /* MetrolaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetrolaApp.swift; sourceTree = "<group>"; };
 		067DD7D52C41EE9D002B51DA /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
 		067DD7D72C41F67A002B51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		069517D12C38A8B900478C8C = {
 			isa = PBXGroup;
 			children = (
+				0615F4D72C43559500B0FD09 /* gpxgenerator_path.gpx */,
 				069517DC2C38A8B900478C8C /* metrola */,
 				069517ED2C38A8BA00478C8C /* metrolaTests */,
 				069517F72C38A8BA00478C8C /* metrolaUITests */,
