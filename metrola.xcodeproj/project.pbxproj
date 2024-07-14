@@ -51,7 +51,9 @@
 		062744EA2C3CAE5100541CE3 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Direction.swift,
 				Line.swift,
+				Station.swift,
 			);
 			target = 069517D92C38A8B900478C8C /* metrola */;
 		};
