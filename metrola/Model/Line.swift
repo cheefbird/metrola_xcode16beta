@@ -13,6 +13,9 @@ class Line {
     var name: String
     var color: String
     var type: String
+    
+    @Relationship(deleteRule: .deny, inverse: \Direction.line)
+    var directions = [Direction]()
 
     init(id: String, name: String, color: String, type: String) {
         self.id = id
